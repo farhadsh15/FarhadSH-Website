@@ -1,0 +1,157 @@
+.container {
+    display: flex;
+    justify-content: center;
+    /* background-color: #f9f9f9; */
+    /* min-height: 100vh; */
+    align-items: center;
+    text-align: right;
+    color: #fff;
+    padding-top: 2.5rem;
+}
+
+.header {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 1rem 0rem 2.5rem;
+    text-shadow: 1px 1px 8px rgba(116, 175, 242, 0.5)
+}
+  
+.formContainer {
+    /* border: 1px solid silver; */
+    width: fit-content;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 10px;
+    height: fit-content;
+    /* background-color: #fff; */
+    box-shadow: 0px 0px 10px rgba(116, 175, 242, 0.7);
+}
+
+.telEmail {
+    display: flex;
+    gap: 1rem;
+    /* justify-content: space-between; */
+}
+.telEmail input {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    border: 1px solid silver;
+    transition: all 0.2s ease-in;
+}
+
+ 
+.formField {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    height: 75px;
+}
+  
+.formField label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    text-align: right;
+}
+.formField:nth-child(5) textarea {
+    height: 150px;
+    padding: 5px;
+}
+.formField:nth-child(5) {
+    height: fit-content;
+}
+
+.formInput {
+    width: auto;
+    min-height: 30px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    border: 1px solid silver;
+    transition: all 0.2s ease-in;
+}
+.uncompleted {
+    /* width: 500px; */
+    min-height: 30px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    border: 1px solid red;
+    transition: all 0.2s ease-in;
+}
+  
+.formInput:focus,
+.uncompleted:focus {
+    outline: none;
+    /* line-height: 30px; */
+    /* height: 30px; */
+    border: 1px solid #1a73e8;
+}
+  
+.formField span {
+    height: 10px;
+    margin-top: 5px;
+    width: fit-content;
+    font-size: 1rem;
+    color: rgb(223, 78, 32);
+    text-shadow: 0px 0px 8px rgb(223, 78, 32);
+    line-height: 10px;
+    padding: 2px 3px;
+    border-radius: 3px;
+    /* background-color: rgb(116, 175, 242); */
+}
+  
+.formButtons {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 30px;
+}
+  
+.formButtons button {
+    background-color: rgb(223, 78, 32);
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+  
+.formButtons button:hover {
+    /* background-color: #004aaa; */
+    transform:scale(1.1)
+}
+
+@media (max-width: 440px) {
+    .container {
+        width: 100%;
+        /* display: block; */
+        margin: 3rem 0rem;
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+    }
+    .telEmail {
+        display: grid;
+        /* width: 200px; */
+        gap: 0;
+    }
+    .telEmail input {
+        width: 90%;
+        /* margin-right: ; */
+    }
+    .formInput {
+        width: 90%;
+        /* margin-right: ; */
+    }
+    .formContainer {
+        padding: 20px;
+        margin: 0px;
+        width: 100%;
+        box-shadow: none;
+        /* margin-right: -20px; */
+    }
+}

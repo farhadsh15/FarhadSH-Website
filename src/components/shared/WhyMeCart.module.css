@@ -1,0 +1,22 @@
+.container {
+    background-color: rgb(77, 76, 76);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(128, 128, 128);
+    width: fit-content;
+    width: 120px;
+    /* height: 90px; */
+    text-align: center;
+    padding: 15px 10px;
+}
+.container p {
+    margin-bottom: 5px;
+}
+.container h4 {
+    margin-top: 10px;
+}
+
+@media (max-width: 440px) {
+    .container {
+        margin: 1rem;
+    }
+}

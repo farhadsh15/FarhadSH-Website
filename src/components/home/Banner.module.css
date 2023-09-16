@@ -1,0 +1,96 @@
+.banner {
+    position: relative;
+    /* background-image: ; */
+}
+
+.banner img {
+    width: 100%;
+    /* height: calc(100vh - 50px); */
+    /* position: absolute; */
+    /* top: 50px; */
+    margin-top: 50px;
+}
+
+.banner h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 8px rgb(116, 175, 242);
+    position: absolute;
+    top: 280px;
+    right: 170px;
+    font-size: 4rem;
+    animation: scaleUpCenter 5s 200ms;
+    cursor: context-menu;
+}
+.banner div {
+    position: absolute;
+    top: 390px;
+    right: 190px;
+}
+.banner div button {
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: rgb(223, 78, 32);
+    color: #fff;
+    border: none;
+}
+.banner div button:hover {
+    cursor: pointer;
+}
+.banner div button:first-child {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+}
+.banner div button:first-child:hover {
+    border-color: rgb(223, 78, 32);
+    background-color: rgb(223, 78, 32);
+    animation: hoverBackColer 2s infinite;
+}
+.banner div button:nth-child(2):hover {
+    box-shadow: 1px 1px 8px rgb(116, 175, 242);
+    animation: hoverShadow 100ms;
+}
+
+@keyframes hoverBackColer { 
+    0%{
+        background-color: rgba(223, 78, 32, 0.2);
+        border-color: rgba(223, 78, 32, 0.2);
+    } 
+    50%{
+        background-color: rgba(223, 78, 32, 1);
+        border-color: rgb(223, 78, 32);
+    }
+    100%{
+        background-color: rgba(223, 78, 32, 0.2);
+        border-color: rgba(223, 78, 32, 0.2);
+    } 
+}
+
+@keyframes scaleUpCenter { 
+    0%{transform:scale(0.2)} 
+    100%{transform:scale(1)} 
+}
+
+@keyframes hoverShadow {
+    0%{box-shadow: 1px 1px 8px rgba(116, 175, 242, 0);}
+    100%{box-shadow: 1px 1px 8px rgba(116, 175, 242, 1);}
+}
+
+
+@media (max-width: 440px) {
+    .banner h1 {
+        font-size: 2rem;
+        top: 100px;
+        right: 30px;
+        /* transform:scale(0.7) */
+    }
+    .banner div button {
+        font-size: 0.6rem;
+        margin: 0.5rem;
+    }
+    .banner div {
+        top: 160px;
+        right: 40px;
+    }
+}

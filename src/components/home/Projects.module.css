@@ -1,0 +1,35 @@
+.container {
+    height: 340px;
+    background-color: rgb(77, 76, 76);
+    text-align: center;
+    padding: 2rem;
+}
+
+.container h2 {
+    margin: 1rem 0rem 3rem;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 8px rgba(116, 175, 242, 0.5)
+}
+
+.container div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 1rem;
+}
+
+@media (max-width: 440px) {
+    .container {
+        height: fit-content;
+    }
+    .container div {
+        /* padding-left: 0rem; */
+        /* height: fit-content; */
+        display: grid;
+        height: fit-content;
+        justify-content: center;
+        gap: 50px;
+        /* padding-top: 2.5rem; */
+    }
+}

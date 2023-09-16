@@ -1,0 +1,89 @@
+.container ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 12px;
+    margin: auto 10px;
+}
+.container ul li a:hover {
+    text-shadow: 0 0 8px rgba(116, 175, 242, 0.5);
+}
+.container img {
+    width: 50px;
+}
+
+/* ............................. */
+
+.pc {
+    background-color: rgb(89, 89, 89);
+    height: 50px;
+    width: 80vw;
+    /* width: 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    padding: 0.5rem 10rem;
+    right: 0px;
+}
+
+.pc ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    /* width: 300px; */
+    /* margin: auto 50px; */
+}
+
+/* ............................. */
+
+.hambergur {
+    display: none;
+}
+.hambergurNavbar {
+    display: flex;
+    width: 100%;
+    padding: 10px 0px;
+    height: 30px;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    background-color: rgb(89, 89, 89);
+}
+.hambergur ul {
+    display: block;
+    position: fixed;
+    top: 50px;
+    list-style: none;
+    background-color: rgba(77, 76, 76, 0.8);
+    padding: 10px 0px;
+    z-index: 1000;
+    /* width: 360px; */
+    width: 100%;
+}
+.hambergur ul li {
+    margin: 10px 5px;
+}
+.hambergur ul li a {
+    font-size: 1.2rem;
+}
+.hamIcon div {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0px;
+    border-radius: 2px;
+}
+
+/* ............................. */
+
+@media (max-width: 440px) {
+    .pc {
+        display: none;
+    }
+    .hambergur {
+        display: block;
+    }
+}
